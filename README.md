@@ -14,3 +14,5 @@ Manual deploy:
 GCP Cloud Build:
 
 	Connect the GCP Cloud Build to this git repository and trigger the build.
+
+[The web link for this project is here](https://gcp-ci-cd-266720.appspot.com/)
