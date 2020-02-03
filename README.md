@@ -13,4 +13,4 @@ Manual deploy:
 
 GCP Cloud Build:
 
-	Connect the GCP Cloud Build to this git repository and trigure the build.
+	Connect the GCP Cloud Build to this git repository and trigger the build.
