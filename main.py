@@ -30,10 +30,12 @@ def get_data():
 def map_visualmap(name, val):
     c = (
         Map()
-        .add("Total Case", [list(z) for z in zip(name, val)], "world")
+        .add("Reported Case", [list(z) for z in zip(name, val)], "world")
         .set_global_opts(
-            title_opts=opts.TitleOpts(title="Coronavirus visualization"),
-            visualmap_opts=opts.VisualMapOpts(max_=max(val), is_piecewise=False),
+            title_opts=opts.TitleOpts(
+                title="Coronavirus total reported insident: " + str(sum(val))),
+            visualmap_opts=opts.VisualMapOpts(
+                max_=max(val), is_piecewise=False),
 
         )
         .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
@@ -52,7 +54,7 @@ def hello():
 
 
 @app.route('/upload')
-def upload():  
+def upload():
     return render_template("file_upload.html")
 
 

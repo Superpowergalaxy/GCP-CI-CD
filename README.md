@@ -6,6 +6,10 @@ In this project, 2 functions are built.
 
 
 To run the project:
+Run program locally:
+
+	make install
+    python3 main.py
 
 Manual deploy:
 
