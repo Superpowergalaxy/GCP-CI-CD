@@ -6,7 +6,11 @@ In this project, 2 functions are built.
 
 
 To run the project:
+
 Manual deploy:
+
 	make all
+
 GCP Cloud Build:
+
 	Connect the GCP Cloud Build to this git repository and trigure the build.
